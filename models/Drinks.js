@@ -15,6 +15,10 @@ Drinks.init(
         drink_name: {
             type: DataTypes.STRING,
         },
+        
+        base: {
+            type: DataTypes.STRING,
+        },
     
         add_ins: {
             type: DataTypes.STRING,

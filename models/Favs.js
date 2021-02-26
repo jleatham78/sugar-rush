@@ -17,7 +17,7 @@ Favs.init(
     
         user_id: {
             type: DataTypes.INTEGER,
-            allowNull: false,
+            //allowNull: false,
             references: {
                 model: 'user',
                 key: 'id'
@@ -28,7 +28,7 @@ Favs.init(
         sequelize,
         freezeTableName: true,
         underscored: true,
-        modelName: 'comment'
+        modelName: 'favs'
         }
 
 );

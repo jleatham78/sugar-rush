@@ -4,6 +4,6 @@ const userRoutes = require('./user-routes');
 const favsRoutes = require('./favs-routes');
 
 router.use('/users', userRoutes);
-router.use('/posts', favsRoutes);
+router.use('/favs', favsRoutes);
 
 module.exports = router;
