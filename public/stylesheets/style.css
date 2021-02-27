@@ -21,6 +21,12 @@
 }
 /* styling for section headers ENDS*/
 
+/* styling for menu section boxes BEGINS*/
+.menu-image {
+   margin-left: 18rem !important;
+}
+/* styling for menu section boxes ENDS*/
+
 /* styling for contact section boxes BEGINS*/
 .box {
     background: #7bf3f3 !important;
