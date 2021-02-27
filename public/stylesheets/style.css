@@ -5,20 +5,20 @@
 /* manual overrides for BULMA END*/
 
 /* Hero Adjustments START */
-.navbar{
+.navbar {
     background: #7bf3f3 !important;
     
 }
 /* Hero Adjustments END */
 
-.menu h1{
-    color: #7bf3f3 !important;
+.h2 {
+    color: #7bf3f3;
     text-align: center;
 }
 
 /* Footer Styles END */
-.footer{
-    background: #7bf3f3;
+.title {
+    color: #7bf3f3 !important;
 }
 /* Media query for widths up to 575px  */
 /* @media screen and (max-width: 575px) {
