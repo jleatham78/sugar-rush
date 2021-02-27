@@ -1,29 +1,48 @@
-/* manual overrides for BULMA START*/
+/* manual overrides for BULMA BEGINS*/
 .section {
     padding: 1.5rem !important; /* overrode default BULMA padding */
 }
-/* manual overrides for BULMA END*/
 
-/* Hero Adjustments START */
+/* Homepage Styling BEGINS*/
+/* styles for navigation bar BEGINS*/
 .navbar {
     background: #7bf3f3 !important;
-    
 }
-/* Hero Adjustments END */
+/* styles for navigation bar ENDS*/
 
+/* styling for section headers BEGINS*/
 .h2 {
     color: #7bf3f3;
     text-align: center;
 }
 
-/* Footer Styles END */
 .title {
     color: #717977 !important;
 }
+/* styling for section headers ENDS*/
 
+/* styling for contact section boxes BEGINS*/
 .box {
     background: #7bf3f3 !important;
 }
+/* styling for contact section boxes ENDS*/
+/* Homepage Styling ENDS*/
+
+/* Log In/Sign Up Page Styling BEGINS*/
+/* styling for forms BEGINS*/
+.notification {
+    background: #7bf3f3 !important;
+}
+.button {
+    background: #cccccc !important;
+    color: #353a39 !important;
+}
+/* styling for forms ENDS*/
+/* Log In/Sign Up Page Styling ENDS*/
+
+
+
+
 /* Media query for widths up to 575px  */
 /* @media screen and (max-width: 575px) {
     .hero.is-primary .subtitle {
