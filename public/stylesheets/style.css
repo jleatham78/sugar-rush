@@ -1,0 +1,49 @@
+/* manual overrides for BULMA START*/
+.section {
+    padding: 1.5rem !important; /* overrode default BULMA padding */
+}
+/* manual overrides for BULMA END*/
+
+/* Hero Adjustments START */
+.navbar {
+    background: #7bf3f3 !important;
+    
+}
+/* Hero Adjustments END */
+
+.h2 {
+    color: #7bf3f3;
+    text-align: center;
+}
+
+/* Footer Styles END */
+.title {
+    color: #7bf3f3 !important;
+}
+/* Media query for widths up to 575px  */
+/* @media screen and (max-width: 575px) {
+    .hero.is-primary .subtitle {
+        padding-top: 10px;
+        font-size: 1.2rem;
+    }
+    .hero-body h1 {
+        font-size: 2rem !important;
+    }
+    .title {
+        font-size: 1.75rem;
+    }
+    .drink-list-item, .drink-menu-item, .eats-menu-item, .food-list-item {
+        font-size: 18px;
+    }
+    input[type="text" i] {
+        width: 80%;
+        border-radius: .25rem;
+        padding: 10px 5px;
+    }
+    li {
+        padding: 7px 0;
+    }
+    #menu-drinks, #menu-eats {
+        margin: 0 1rem;
+    }
+} */
