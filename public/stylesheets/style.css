@@ -18,7 +18,11 @@
 
 /* Footer Styles END */
 .title {
-    color: #7bf3f3 !important;
+    color: #717977 !important;
+}
+
+.box {
+    background: #7bf3f3 !important;
 }
 /* Media query for widths up to 575px  */
 /* @media screen and (max-width: 575px) {
