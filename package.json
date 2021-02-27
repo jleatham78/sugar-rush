@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/jleatham78/sugar-rush#readme",
   "dependencies": {
+    "bulma-start": "0.0.4",
     "bulma": "^0.9.2",
     "bcrypt": "^5.0.1",
     "connect-session-sequelize": "^7.1.1",
@@ -28,5 +29,8 @@
     "mysql2": "^2.2.5",
     "seed-js": "0.0.11",
     "sequelize": "^6.5.0"
+  },
+  "devDependencies": {
+    "node-sass": "^5.0.0"
   }
 }
