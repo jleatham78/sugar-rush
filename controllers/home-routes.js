@@ -13,19 +13,19 @@ router.get('/', (req, res) => {
         ],
         
       })
-        .then(dbDrinksData => {
-          const menu = dbDrinksData.map(menu => menu.get({ plain: true }));
+        .then(dbDrinksData => res.json(dbDrinksData))
+          //const menu = dbDrinksData.map(menu => menu.get({ plain: true }));
     
-          res.render('homepage', {
-            menu
-            //loggedIn: req.session.loggedIn
-          });
-        })
+        //   res.render('homepage', {
+        //     menu
+        //     //loggedIn: req.session.loggedIn
+        //   });
+         })
         .catch(err => {
           console.log(err);
           res.status(500).json(err);
         });
-    });
+    //});
 
     //don't have a /drinks route yet?
     router.get('/drinks/:base', (req, res) => {
