@@ -199,17 +199,47 @@ const menuData = [
 },
 {
     drink_name: "Master Chief", 
-    base: "Energy Rush", 
+    base: "Redbull", 
+    add_ins: "green apple, kiwi"
+},
+{
+    drink_name: "Master Chief", 
+    base: "Rockstar", 
+    add_ins: "green apple, kiwi"
+},
+{
+    drink_name: "Master Chief", 
+    base: "Monster", 
     add_ins: "green apple, kiwi"
 },
 {
     drink_name: "Berry Boost", 
-    base: "Energy Rush", 
+    base: "Redbull", 
+    add_ins: "blueberry, raspberry"
+},
+{
+    drink_name: "Berry Boost", 
+    base: "Rockstar", 
+    add_ins: "blueberry, raspberry"
+},
+{
+    drink_name: "Berry Boost", 
+    base: "Monster", 
     add_ins: "blueberry, raspberry"
 },
 {
     drink_name: "Nirvana", 
-    base: "Energy Rush", 
+    base: "Redbull", 
+    add_ins: "strawberry, orange"
+},
+{
+    drink_name: "Nirvana", 
+    base: "Rockstar", 
+    add_ins: "strawberry, orange"
+},
+{
+    drink_name: "Nirvana", 
+    base: "Monster", 
     add_ins: "strawberry, orange"
 },
 {
