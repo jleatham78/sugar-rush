@@ -14,13 +14,12 @@ User.init(
             type: DataTypes.INTEGER,
             allowNull: false,
             primaryKey: true,
-            autoIncrement: true
+            autoIncrement: true,
         },
 
-        name: {
+        user_name: {
             type: DataTypes.STRING,
             allowNull: false,
-            primaryKey: true,
         },
     
         email: {

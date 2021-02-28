@@ -2,6 +2,15 @@ const router = require('express').Router();
 const { Favs } = require('../../models');
 const withAuth = require('../../utils/auth');
 
+router.get('/', (req, res) => {
+    Favs.findAll({})
+    .then(dbFavsData => res.json(dbFavsData))
+    .catch(err => {
+        console.log(err);
+        res.status(400).json(err);
+    });
+});
+
 router.post('/', (req, res) => {
     //if (req.session)
         Favs.create({

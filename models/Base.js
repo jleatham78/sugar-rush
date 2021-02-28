@@ -5,8 +5,9 @@ class Base extends Model {}
 
 Base.init(
     {
-        drink_id: {
+        id: {
             type: DataTypes.INTEGER,
+            primaryKey: true
         },
     
         base: {
