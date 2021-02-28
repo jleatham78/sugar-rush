@@ -25,10 +25,8 @@ router.get('/', (req, res) => {
       console.log(err);
       res.status(500).json(err);
     });
-});
-
-  })
-    .then(dbDrinksData => res.json(dbDrinksData))
+})
+  .then(dbDrinksData => res.json(dbDrinksData))
   //const menu = dbDrinksData.map(menu => menu.get({ plain: true }));
 
   //   res.render('homepage', {
@@ -40,7 +38,7 @@ router.get('/', (req, res) => {
     console.log(err);
     res.status(500).json(err);
   });
-});
+
 
 //don't have a /drinks route yet?
 router.get('/drinks/:base', (req, res) => {
