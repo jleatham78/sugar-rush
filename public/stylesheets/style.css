@@ -32,6 +32,12 @@
     background: #7bf3f3 !important;
 }
 /* styling for contact section boxes ENDS*/
+
+/* styling for footer BEGINS*/
+.footer{
+    padding: 5rem 1.5rem;
+}
+/* styling for footer ENDS*/
 /* Homepage Styling ENDS*/
 
 /* Log In/Sign Up Page Styling BEGINS*/
