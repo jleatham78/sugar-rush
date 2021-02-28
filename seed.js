@@ -78,6 +78,101 @@ const menuData = [
     add_ins: "mango puree, coconut, fresh lime"
 },
 {
+    drink_name: "Cherry Blossom", 
+    base: "Coke", 
+    add_ins: "cherry, vanilla, m. cherry"
+},
+{
+    drink_name: "Cherry Blossom", 
+    base: "Diet Coke", 
+    add_ins: "cherry, vanilla, m. cherry"
+},
+{
+    drink_name: "Cherry Blossom", 
+    base: "Coke Zero", 
+    add_ins: "cherry, vanilla, m. cherry"
+},
+{
+    drink_name: "Cherry Blossom", 
+    base: "Pepsi", 
+    add_ins: "cherry, vanilla, m. cherry"
+},
+{
+    drink_name: "Cherry Blossom", 
+    base: "Diet Pepsi", 
+    add_ins: "cherry, vanilla, m. cherry"
+},
+{
+    drink_name: "Super Schrute", 
+    base: "Coke", 
+    add_ins: "raspberry, blackberry, coconut"
+},
+{
+    drink_name: "Super Schrute", 
+    base: "Diet Coke", 
+    add_ins: "raspberry, blackberry, coconut"
+},
+{
+    drink_name: "Super Schrute", 
+    base: "Coke Zero", 
+    add_ins: "raspberry, blackberry, coconut"
+},
+{
+    drink_name: "Super Schrute", 
+    base: "Pepsi", 
+    add_ins: "raspberry, blackberry, coconut"
+},
+{
+    drink_name: "Super Schrute", 
+    base: "Diet Pepsi", 
+    add_ins: "raspberry, blackberry, coconut"
+},
+{
+    drink_name: "Unicorn Blood", 
+    base: "Coke", 
+    add_ins: "cherry, coconut"
+},
+{
+    drink_name: "Unicorn Blood", 
+    base: "Diet Coke", 
+    add_ins: "cherry, coconut"
+},
+{
+    drink_name: "Unicorn Blood", 
+    base: "Coke Zero", 
+    add_ins: "cherry, coconut"
+},
+{
+    drink_name: "Unicorn Blood", 
+    base: "Pepsi", 
+    add_ins: "cherry, coconut"
+},
+{
+    drink_name: "Unicorn Blood", 
+    base: "Diet Pepsi", 
+    add_ins: "cherry, coconut"
+},
+{
+    drink_name: "Granger", 
+    base: "Coke", 
+    add_ins: "cranberry, fresh lime"
+},
+{
+    drink_name: "Granger", 
+    base: "Diet Coke", 
+    add_ins: "cranberry, fresh lime"
+},
+{
+    drink_name: "Granger", 
+    base: "Pepsi",
+    add_ins: "cranberry, fresh lime"
+},
+{
+    drink_name: "Granger", 
+    base: "Diet Pepsi", 
+    add_ins: "cranberry, fresh lime"
+},
+{
     drink_name: "Vanellope", 
     base: "Dr. Pepper", 
     add_ins: "coconut cream, strawberry puree, vanilla"
@@ -108,6 +203,46 @@ const menuData = [
     add_ins: "peach, fresh lime"
 },
 {
+    drink_name: "Pinapple Schweetz", 
+    base: "Dr. Pepper", 
+    add_ins: "cherry, pineapple"
+},
+{
+    drink_name: "Pinapple Schweetz", 
+    base: "Diet Dr. Pepper", 
+    add_ins: "cherry, pineapple"
+},
+{
+    drink_name: "The Upside Down", 
+    base: "Dr. Pepper", 
+    add_ins: "raspberry, coconut, cream"
+},
+{
+    drink_name: "The Upside Down", 
+    base: "Diet Dr. Pepper", 
+    add_ins: "raspberry, coconut, cream"
+},
+{
+    drink_name: "The Glitch", 
+    base: "Dr. Pepper", 
+    add_ins: "coconut, blackberry"
+},
+{
+    drink_name: "The Glitch", 
+    base: "Diet Dr. Pepper", 
+    add_ins: "coconut, blackberry"
+},
+{
+    drink_name: "Peach on the Beach", 
+    base: "Dr. Pepper", 
+    add_ins: "peach, cream, vanilla"
+},
+{
+    drink_name: "Peach on the Beach", 
+    base: "Diet Dr. Pepper", 
+    add_ins: "peach, cream, vanilla"
+},
+{
     drink_name: "Sweet Mai Tai", 
     base: "Mountain Dew", 
     add_ins: "fresh lime, coconut, peach, mango puree"
@@ -181,6 +316,231 @@ const menuData = [
     drink_name: "Ragnar", 
     base: "7Up", 
     add_ins: "vanilla, mango puree, raspberry"
+},
+{
+    drink_name: "Tsunami", 
+    base: "Mountain Dew", 
+    add_ins: "green apple, raspberry, coconut"
+},
+{
+    drink_name: "Tsunami", 
+    base: "Diet Mountain Dew", 
+    add_ins: "green apple, raspberry, coconut"
+},
+{
+    drink_name: "Tsunami", 
+    base: "Sprite", 
+    add_ins: "green apple, raspberry, coconut"
+},
+{
+    drink_name: "Tsunami", 
+    base: "Sprite Zero", 
+    add_ins: "green apple, raspberry, coconut"
+},
+{
+    drink_name: "Tsunami", 
+    base: "7Up", 
+    add_ins: "green apple, raspberry, coconut"
+},
+{
+    drink_name: "Tropical Sunset", 
+    base: "Mountain Dew", 
+    add_ins: "pineapple, strawberry, coconut"
+},
+{
+    drink_name: "Tropical Sunset", 
+    base: "Diet Mountain Dew", 
+    add_ins: "pineapple, strawberry, coconut"
+},
+{
+    drink_name: "Tropical Sunset", 
+    base: "Sprite", 
+    add_ins: "pineapple, strawberry, coconut"
+},
+{
+    drink_name: "Tropical Sunset", 
+    base: "Sprite Zero", 
+    add_ins: "pineapple, strawberry, coconut"
+},
+{
+    drink_name: "Tropical Sunset", 
+    base: "7Up", 
+    add_ins: "pineapple, strawberry, coconut"
+},
+{
+    drink_name: "Queen B", 
+    base: "Mountain Dew", 
+    add_ins: "peach, pomegranate, blackberry"
+},
+{
+    drink_name: "Queen B", 
+    base: "Diet Mountain Dew", 
+    add_ins: "peach, pomegranate, blackberry"
+},
+{
+    drink_name: "Queen B", 
+    base: "Sprite", 
+    add_ins: "peach, pomegranate, blackberry"
+},
+{
+    drink_name: "Queen B", 
+    base: "Sprite Zero", 
+    add_ins: "peach, pomegranate, blackberry"
+},
+{
+    drink_name: "Queen B", 
+    base: "7Up", 
+    add_ins: "peach, pomegranate, blackberry"
+},
+{
+    drink_name: "Miami Nights", 
+    base: "Mountain Dew", 
+    add_ins: "strawberry, peach puree, fresh lime"
+},
+{
+    drink_name: "Miami Nights", 
+    base: "Diet Mountain Dew", 
+    add_ins: "strawberry, peach puree, fresh lime"
+},
+{
+    drink_name: "Miami Nights", 
+    base: "Sprite", 
+    add_ins: "strawberry, peach puree, fresh lime"
+},
+{
+    drink_name: "Miami Nights", 
+    base: "Sprite Zero", 
+    add_ins: "strawberry, peach puree, fresh lime"
+},
+{
+    drink_name: "Miami Nights", 
+    base: "7Up", 
+    add_ins: "strawberry, peach puree, fresh lime"
+},
+{
+    drink_name: "San Holo", 
+    base: "Mountain Dew", 
+    add_ins: "blood orange, mango"
+},
+{
+    drink_name: "San Holo", 
+    base: "Diet Mountain Dew", 
+    add_ins: "blood orange, mango"
+},
+{
+    drink_name: "San Holo", 
+    base: "Sprite", 
+    add_ins: "blood orange, mango"
+},
+{
+    drink_name: "San Holo", 
+    base: "Sprite Zero", 
+    add_ins: "blood orange, mango"
+},
+{
+    drink_name: "San Holo", 
+    base: "7Up", 
+    add_ins: "blood orange, mango"
+},
+{
+    drink_name: "The Hufflepuff", 
+    base: "Mountain Dew", 
+    add_ins: "strawberry puree, kiwi"
+},
+{
+    drink_name: "The Hufflepuff", 
+    base: "Diet Mountain Dew", 
+    add_ins: "strawberry puree, kiwi"
+},
+{
+    drink_name: "The Hufflepuff", 
+    base: "Sprite", 
+    add_ins: "strawberry puree, kiwi"
+},
+{
+    drink_name: "The Hufflepuff", 
+    base: "Sprite Zero", 
+    add_ins: "strawberry puree, kiwi"
+},
+{
+    drink_name: "The Hufflepuff", 
+    base: "7Up", 
+    add_ins: "strawberry puree, kiwi"
+},
+{
+    drink_name: "Vader", 
+    base: "Mountain Dew", 
+    add_ins: "blackberry, grape, fresh lime"
+},
+{
+    drink_name: "Vader", 
+    base: "Diet Mountain Dew", 
+    add_ins: "blackberry, grape, fresh lime"
+},
+{
+    drink_name: "Vader", 
+    base: "Sprite", 
+    add_ins: "blackberry, grape, fresh lime"
+},
+{
+    drink_name: "Vader", 
+    base: "Sprite Zero", 
+    add_ins: "blackberry, grape, fresh lime"
+},
+{
+    drink_name: "Vader", 
+    base: "7Up", 
+    add_ins: "blackberry, grape, fresh lime"
+},
+{
+    drink_name: "Lost Boy", 
+    base: "Mountain Dew", 
+    add_ins: "watermelon, blueberry"
+},
+{
+    drink_name: "Lost Boy", 
+    base: "Diet Mountain Dew", 
+    add_ins: "watermelon, blueberry"
+},
+{
+    drink_name: "Lost Boy", 
+    base: "Sprite", 
+    add_ins: "watermelon, blueberry"
+},
+{
+    drink_name: "Lost Boy", 
+    base: "Sprite Zero", 
+    add_ins: "watermelon, blueberry"
+},
+{
+    drink_name: "Lost Boy", 
+    base: "7Up", 
+    add_ins: "watermelon, blueberry"
+},
+{
+    drink_name: "Steve Harrington", 
+    base: "Mountain Dew", 
+    add_ins: "red raspberry, cream"
+},
+{
+    drink_name: "Steve Harrington", 
+    base: "Diet Mountain Dew", 
+    add_ins: "red raspberry, cream"
+},
+{
+    drink_name: "Steve Harrington", 
+    base: "Sprite", 
+    add_ins: "red raspberry, cream"
+},
+{
+    drink_name: "Steve Harrington", 
+    base: "Sprite Zero", 
+    add_ins: "red raspberry, cream"
+},
+{
+    drink_name: "Steve Harrington", 
+    base: "7Up", 
+    add_ins: "red raspberry, cream"
 },
 {
     drink_name: "The Oasis", 
@@ -198,6 +558,26 @@ const menuData = [
     add_ins: "blueberry, coconut cream"
 },
 {
+    drink_name: "Pikapeach", 
+    base: "Lemonade", 
+    add_ins: "peach puree, raspberry, m. cherry"
+},
+{
+    drink_name: "Blue Lagoon", 
+    base: "Lemonade", 
+    add_ins: "blue raspberry, vanilla"
+},
+{
+    drink_name: "Island Girl", 
+    base: "Lemonade", 
+    add_ins: "watermelon, coconut"
+},
+{
+    drink_name: "Patronus Punch", 
+    base: "Lemonade", 
+    add_ins: "mango puree, blackberry"
+},
+{
     drink_name: "Master Chief", 
     base: "Redbull", 
     add_ins: "green apple, kiwi"
@@ -241,6 +621,51 @@ const menuData = [
     drink_name: "Nirvana", 
     base: "Monster", 
     add_ins: "strawberry, orange"
+},
+{
+    drink_name: "Highscore", 
+    base: "Redbull", 
+    add_ins: "blue raspberry, coconut"
+},
+{
+    drink_name: "Highscore", 
+    base: "Rockstar", 
+    add_ins: "blue raspberry, coconut"
+},
+{
+    drink_name: "Highscore", 
+    base: "Monster", 
+    add_ins: "blue raspberry, coconut"
+},
+{
+    drink_name: "Maximum Overdrive", 
+    base: "Redbull", 
+    add_ins: "pineapple, cherry"
+},
+{
+    drink_name: "Maximum Overdrive", 
+    base: "Rockstar", 
+    add_ins: "pineapple, cherry"
+},
+{
+    drink_name: "Maximum Overdrive", 
+    base: "Monster", 
+    add_ins: "pineapple, cherry"
+},
+{
+    drink_name: "Patronus Punch", 
+    base: "Redbull", 
+    add_ins: "cherry, fresh lime, vanilla"
+},
+{
+    drink_name: "Patronus Punch", 
+    base: "Rockstar", 
+    add_ins: "cherry, fresh lime, vanilla"
+},
+{
+    drink_name: "Patronus Punch", 
+    base: "Monster", 
+    add_ins: "cherry, fresh lime, vanilla"
 },
 {
     drink_name: "Shark Bite", 
@@ -264,5 +689,3 @@ const menuData = [
 }
 
 ]
-
-//menu.create

@@ -1,15 +1,25 @@
 const router = require('express').Router();
 const { User } = require('../../models');
 
+router.get('/', (req, res) => {
+    User.findAll({})
+    .then(dbUserData => res.json(dbUserData))
+    .catch(err => {
+        console.log(err);
+        res.status(400).json(err);
+    });
+});
+
 router.post('/', (req, res) => {
     User.create({
-      name: req.body.name,
+      user_name: req.body.user_name,
       email: req.body.email,
       password: req.body.password
     })
       .then(dbUserData => {
         req.session.save(() => {
           req.session.user_id = dbUserData.id;
+          req.session.user_name = dbUserData.user_name;
           req.session.email = dbUserData.email;
           req.session.loggedIn = true;
     

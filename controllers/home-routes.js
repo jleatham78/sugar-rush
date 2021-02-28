@@ -7,8 +7,8 @@ router.get('/', (req, res) => {
     Drinks.findAll({
         attributes: [
           'id',
-          'base',
           'drink_name',
+          'base',
           'add_ins'
         ],
         
@@ -20,12 +20,12 @@ router.get('/', (req, res) => {
         //     menu
         //     //loggedIn: req.session.loggedIn
         //   });
-         })
+        // })
         .catch(err => {
           console.log(err);
           res.status(500).json(err);
         });
-    //});
+    });
 
     //don't have a /drinks route yet?
     router.get('/drinks/:base', (req, res) => {

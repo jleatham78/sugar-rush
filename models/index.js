@@ -16,12 +16,12 @@ Favs.belongsTo(User, {
 });
 
 Base.belongsTo(Drinks, {
-    foreignKey: 'drink_id',
+    foreignKey: 'id',
     allowNull: false
 })
 
 Drinks.hasMany(Base, {
-    foreignKey: 'base',
+    foreignKey: 'id',
     allowNull: false
 })
 
