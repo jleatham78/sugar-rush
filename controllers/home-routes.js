@@ -13,7 +13,7 @@ router.get('/', (req, res) => {
     res.render('homepage');
   });
 
-router.get('/login', (req, res) => {
+  router.get('/login', (req, res) => {
     if (req.session.loggedIn) {
         res.redirect('/');
         return;
@@ -21,6 +21,8 @@ router.get('/login', (req, res) => {
       
     res.render('signup');
   });
+
+
 
   router.get('/favs', (req, res) => {
     if (req.session.loggedIn) {
