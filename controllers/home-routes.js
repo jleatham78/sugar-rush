@@ -7,8 +7,8 @@ router.get('/', (req, res) => {
   Drinks.findAll({
     attributes: [
       'id',
-      'drink_name',
       'base',
+      'drink_name',
       'add_ins'
     ],
 
@@ -20,7 +20,7 @@ router.get('/', (req, res) => {
     //     menu
     //     //loggedIn: req.session.loggedIn
     //   });
-    // })
+    //  })
     .catch(err => {
       console.log(err);
       res.status(500).json(err);
