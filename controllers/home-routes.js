@@ -31,7 +31,7 @@ router.get('/login', (req, res) => {
     res.render('favorites');
   });
 
-router.get('/', (req, res) => {
+router.get('/drinks', (req, res) => {
   //do I get all drinks or all bases?? and do I need to add "base" to the drink attributes?
   Drinks.findAll({
     attributes: [
