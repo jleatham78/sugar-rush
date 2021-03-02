@@ -2,7 +2,7 @@ const router = require('express').Router();
 const { Favs } = require('../../models');
 const withAuth = require('../../utils/auth');
 
-router.get('/', (req, res) => {
+router.get('/', withAuth, (req, res) => {
     Favs.findAll({})
     .then(dbFavsData => res.json(dbFavsData))
     .catch(err => {
@@ -11,7 +11,7 @@ router.get('/', (req, res) => {
     });
 });
 
-router.post('/', (req, res) => {
+router.post('/', withAuth, (req, res) => {
     //if (req.session)
         Favs.create({
             drink_name: req.body.drink_name,
@@ -26,7 +26,7 @@ router.post('/', (req, res) => {
 });
 
 
-router.delete('/:id', (req, res) => {
+router.delete('/:id', withAuth, (req, res) => {
     Favs.destroy({
         where: {
             id: req.params.id
