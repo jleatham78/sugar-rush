@@ -18,6 +18,10 @@ Drinks.init(
         
         base: {
             type: DataTypes.STRING,
+            // references: {
+            //     model: 'base',
+            //     key: 'id'
+            // }
         },
     
         add_ins: {

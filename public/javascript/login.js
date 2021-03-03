@@ -1,11 +1,13 @@
+console.log('connected');
 async function loginFormHandler(event) {
     event.preventDefault();
 
     const email = document.querySelector('#email-login').value.trim();
     const password = document.querySelector('#password-login').value.trim();
 
+    console.log(email, password);
     if (email && password) {
-        const response = await fetch('/api/users/', {
+        const response = await fetch('api/users/login', {
             method: 'post',
             body: JSON.stringify({
                 email,
@@ -16,7 +18,7 @@ async function loginFormHandler(event) {
 
         if (response.ok) {
             //res.render('favorites');
-            document.location.replace('/favorites');
+            document.location.replace('/favs');
         } else {
             alert(response.statusText);
         }
@@ -42,7 +44,7 @@ async function signupFormHandler(event) {
         });
 
         if (response.ok) {
-            document.location.replace('/favorites');
+            document.location.replace('/favs');
         } else {
             alert(response.statusText);
         }
