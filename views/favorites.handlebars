@@ -1,4 +1,45 @@
-<section class="hero mt-6">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sugar Rush Soda Shop</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css" />
+    <link rel="stylesheet" href="./stylesheets/style.css">
+</head>
+
+<!-- navigation bar code BEGINS -->
+
+<body class="has-navbar-fixed-top">
+    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="image is-128x128 pt-3 px-2">
+                <img src="images/Logo2.png" alt="Sugar Rush Soda Shop Logo">
+            </a>
+        </div>
+
+        <div id="navbar" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" href="#home">Home</a>
+                <a class="navbar-item" href="#menu">Menu</a>
+                <a class="navbar-item" href="#contact-us">Contact Us</a>
+            </div>
+
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button is-light" id="logout">
+                            <strong>Log Out</strong>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="hero mt-6">
         <div class="hero-body">
             <p class="title has-text-centered has-text-weight-bold is-underlined">
                 Available Drink Choices
@@ -27,8 +68,24 @@
 
     <section class="section">
         <h1 class="title has-text-centered has-text-weight-bold">Available Drinks</h1>
-        <h2 class="subtitle">
-        </h2>
+        <h2 class="subtitle"></h2>
+        <div class="columns">
+            <div class="card column">
+                <div class="card-content">
+                    <div class="media">
+                        <div class="media-content">
+                            <p class="title is-4">{{ drink_name }}</p>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <p>Ingredients</p>
+                        <ul>
+                            <li>{{ add_ins }}</li>
+                        </ul>
+                        <button type="submit" id="favorite" class="button"><span class="oi oi-heart"></span></button>
+                    </div>
+                </div>
+            </div>
     </section>
 
     <section class="section is-medium">
@@ -36,3 +93,5 @@
         <h2 class="subtitle">
         </h2>
     </section>
+
+</body>

@@ -21,7 +21,14 @@ router.get('/', (req, res) => {
     res.render('signup');
   });
 
+router.get('/login', (req, res) => {
+  if (req.session.loggedIn) {
+    res.redirect('/');
+    return;
+  }
 
+  res.render('signup');
+});
 
   router.get('/favs', (req, res) => {
     // if (req.session.loggedIn) {
@@ -37,8 +44,8 @@ router.get('/drinks', (req, res) => {
   Drinks.findAll({
     attributes: [
       'id',
-      'drink_name',
       'base',
+      'drink_name',
       'add_ins'
     ],
 
@@ -50,7 +57,19 @@ router.get('/drinks', (req, res) => {
     //     menu
     //     //loggedIn: req.session.loggedIn
     //   });
-    // })
+    //  })
+    .catch(err => {
+      console.log(err);
+      res.status(500).json(err);
+    })
+    .then(dbDrinksData => res.json(dbDrinksData))
+    //const menu = dbDrinksData.map(menu => menu.get({ plain: true }));
+
+    //   res.render('homepage', {
+    //     menu
+    //     //loggedIn: req.session.loggedIn
+    //   });
+    //  })
     .catch(err => {
       console.log(err);
       res.status(500).json(err);
@@ -78,13 +97,13 @@ router.get('/drinks/:base', (req, res) => {
       }
 
       // serialize the data
-    //   const menu = dbDrinksData.get({ plain: true });
+      //   const menu = dbDrinksData.get({ plain: true });
 
-    //   // pass data to template
-    //   res.render('single-post', {
-    //     menu,
-    //     //loggedIn: req.session.loggedIn 
-    //   });
+      //   // pass data to template
+      //   res.render('single-post', {
+      //     menu,
+      //     //loggedIn: req.session.loggedIn 
+      //   });
     })
     .catch(err => {
       console.log(err);
