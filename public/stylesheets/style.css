@@ -53,6 +53,13 @@
 /* styling for forms ENDS*/
 /* Log In/Sign Up Page Styling ENDS*/
 
+/* Styling for Favorites Page BEGINS */
+.media {
+    color: #7bf3f3;
+}
+span.oi.oi-heart {
+    color:#7bf3f3 !important;
+}
 
 
 

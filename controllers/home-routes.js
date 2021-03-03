@@ -53,21 +53,19 @@ router.get('/drinks', (req, res) => {
     .catch(err => {
       console.log(err);
       res.status(500).json(err);
+    })
+    .then(dbDrinksData => res.json(dbDrinksData))
+    //const menu = dbDrinksData.map(menu => menu.get({ plain: true }));
+
+    //   res.render('homepage', {
+    //     menu
+    //     //loggedIn: req.session.loggedIn
+    //   });
+    //  })
+    .catch(err => {
+      console.log(err);
+      res.status(500).json(err);
     });
-})
-  .then(dbDrinksData => res.json(dbDrinksData))
-  //const menu = dbDrinksData.map(menu => menu.get({ plain: true }));
-
-  //   res.render('homepage', {
-  //     menu
-  //     //loggedIn: req.session.loggedIn
-  //   });
-  //  })
-  .catch(err => {
-    console.log(err);
-    res.status(500).json(err);
-  });
-
 });
 
 //don't have a /drinks route yet?
