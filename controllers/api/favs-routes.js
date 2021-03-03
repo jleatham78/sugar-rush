@@ -2,7 +2,7 @@ const router = require('express').Router();
 const { Favs } = require('../../models');
 const withAuth = require('../../utils/auth');
 
-router.get('/', withAuth, (req, res) => {
+router.get('/', (req, res) => {
     Favs.findAll({})
         .then(dbFavsData => res.json(dbFavsData))
         .catch(err => {

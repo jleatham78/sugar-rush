@@ -22,6 +22,8 @@ router.get('/login', (req, res) => {
   res.render('signup');
 });
 
+
+
 router.get('/favs', (req, res) => {
   if (req.session.loggedIn) {
     res.redirect('/');
