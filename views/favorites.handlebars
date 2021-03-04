@@ -46,55 +46,58 @@
             </p>
             <div class="buttons are-medium is-centered columns mt-4">
 
-                <button class="button is-link is-rounded column is-one-quarter" onclick="cokeDisplay()">Coke</button>
-                <button class="button is-link is-rounded column is-one-quarter">Diet Coke</button>
-                <button class="button is-link is-rounded column is-one-quarter">Coke Zero</button>
-                <button class="button is-link is-rounded column is-one-quarter">Pepsi</button>
-                <button class="button is-link is-rounded column is-one-quarter">Diet Pepsi</button>
-                <button class="button is-link is-rounded column is-one-quarter">Dr. Pepper</button>
-                <button class="button is-link is-rounded column is-one-quarter">Diet Dr. Pepper</button>
-                <button class="button is-link is-rounded column is-one-quarter">Mtn Dew</button>
-                <button class="button is-link is-rounded column is-one-quarter">Diet Mtn Dew</button>
-                <button class="button is-link is-rounded column is-one-quarter">Sprite</button>
-                <button class="button is-link is-rounded column is-one-quarter">Sprite Zero</button>
-                <button class="button is-link is-rounded column is-one-quarter">7UP</button>
-                <button class="button is-link is-rounded column is-one-quarter">Lemonade</button>
-                <button class="button is-link is-rounded column is-one-quarter">Monster</button>
-                <button class="button is-link is-rounded column is-one-quarter">Redbull</button>
-                <button class="button is-link is-rounded column is-one-quarter">Rockstar</button>
-                <button class="button is-link is-rounded column is-one-quarter">Kids</button>
-
-            </div>
-        </div>
-    </section>
-
-    <section class="section">
-        <h1 class="title has-text-centered has-text-weight-bold">Available Drinks</h1>
-        <div class="columns">
-            <div class="card column is-2">
-                <div class="card-content">
-                    <div class="media">
-                        <div class="media-content">
-                            <p class="title is-4">Midnight Moon</p>
+                <button class="button is-link is-rounded column is-one-quarter" onclick="displayCoke">Coke</button>
+                <div id="cokes">
+                    <div class="columns">
+                        <div class="card column">
+                            <div class="card-content">
+                                <div class="media">
+                                    <div class="media-content">
+                                        <p class="title is-4">Midnight Moon</p>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <p>Ingredients</p>
+                                    <ul>
+                                        <li>Strawberry</li>
+                                        <li>Coconut</li>
+                                        <li>Cream</li>
+                                    </ul>
+                                    <button type="submit" id="favorite" class="button"><span
+                                            class="oi oi-heart"></span></button>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="content">
-                        <p>Ingredients</p>
-                        <ul>
-                            <li>strawberry</li>
-                            <li>coconut</li>
-                            <li>cream</li>
-                        </ul>
-                        <button type="submit" id="favorite" class="button"><span class="oi oi-heart"></span></button>
-                    </div>
+
+                    <button class="button is-link is-rounded column is-one-quarter">Diet Coke</button>
+                    <button class="button is-link is-rounded column is-one-quarter">Coke Zero</button>
+                    <button class="button is-link is-rounded column is-one-quarter">Pepsi</button>
+                    <button class="button is-link is-rounded column is-one-quarter">Diet Pepsi</button>
+                    <button class="button is-link is-rounded column is-one-quarter">Dr. Pepper</button>
+                    <button class="button is-link is-rounded column is-one-quarter">Diet Dr. Pepper</button>
+                    <button class="button is-link is-rounded column is-one-quarter">Mtn Dew</button>
+                    <button class="button is-link is-rounded column is-one-quarter">Diet Mtn Dew</button>
+                    <button class="button is-link is-rounded column is-one-quarter">Sprite</button>
+                    <button class="button is-link is-rounded column is-one-quarter">Sprite Zero</button>
+                    <button class="button is-link is-rounded column is-one-quarter">7UP</button>
+                    <button class="button is-link is-rounded column is-one-quarter">Lemonade</button>
+                    <button class="button is-link is-rounded column is-one-quarter">Monster</button>
+                    <button class="button is-link is-rounded column is-one-quarter">Redbull</button>
+                    <button class="button is-link is-rounded column is-one-quarter">Rockstar</button>
+                    <button class="button is-link is-rounded column is-one-quarter">Kids</button>
+
                 </div>
             </div>
     </section>
 
-    <section class="section is-medium">
-        <h1 class="title has-text-centered has-text-weight-bold">Your Favorites</h1>
-        <h2 class="subtitle">
-        </h2>
-    </section>
 
+    <section class="section is-medium">
+        <div id="drink-container">
+            <h1 class="title has-text-centered has-text-weight-bold">Your Favorites</h1>
+            <h2 class="subtitle">
+            </h2>
+        </div>
+    </section>
+    <script src="../public/javascript/drinks.js"></script>
 </body>

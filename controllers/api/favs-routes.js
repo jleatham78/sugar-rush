@@ -1,6 +1,14 @@
 const router = require('express').Router();
 const { Favs } = require('../../models');
 const withAuth = require('../../utils/auth');
+const menuData = require('../../seed');
+
+// router.get('/soda', (req, res) => {
+//     console.log("got the route");
+//     res.json(menuData.filter(function (e) {
+//         return e.base == "coke";
+//     }))
+// });
 
 router.get('/', (req, res) => {
     Favs.findAll({})
