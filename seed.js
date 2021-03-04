@@ -1,7 +1,7 @@
 const {Drinks} = require('./models');
 const sequelize = require('./config/connection');
 
-const menuData = [
+const drinksData = [
 {
     drink_name: "Midnight Moon",
     base: "Coke",
@@ -689,3 +689,8 @@ const menuData = [
 }
 
 ]
+
+const seedPosts = () => Drinks.bulkcreate(drinksData);
+
+module.exports = seedPosts;
+
