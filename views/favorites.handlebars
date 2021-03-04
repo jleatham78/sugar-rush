@@ -1,15 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sugar Rush Soda Shop</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css" />
-    <link rel="stylesheet" href="./stylesheets/style.css">
-</head>
 
 <!-- navigation bar code BEGINS -->
 
@@ -23,9 +12,7 @@
 
         <div id="navbar" class="navbar-menu">
             <div class="navbar-start">
-                <a class="navbar-item" href="#home">Home</a>
-                <a class="navbar-item" href="#menu">Menu</a>
-                <a class="navbar-item" href="#contact-us">Contact Us</a>
+                <a class="navbar-item" onclick="location.href='/'">Home</a>
             </div>
 
             <div class="navbar-end">
@@ -46,10 +33,11 @@
             </p>
             <div class="buttons are-medium is-centered columns mt-4">
 
-                <button class="button is-link is-rounded column is-one-quarter">Coke</button>
+                <button id="coke" class="button is-link is-rounded column is-one-quarter">Coke</button>
                 <button class="button is-link is-rounded column is-one-quarter">Diet Coke</button>
                 <button class="button is-link is-rounded column is-one-quarter">Coke Zero</button>
                 <button class="button is-link is-rounded column is-one-quarter">Pepsi</button>
+                <button class="button is-link is-rounded column is-one-quarter">Diet Pepsi</button>
                 <button class="button is-link is-rounded column is-one-quarter">Dr. Pepper</button>
                 <button class="button is-link is-rounded column is-one-quarter">Diet Dr. Pepper</button>
                 <button class="button is-link is-rounded column is-one-quarter">Mtn Dew</button>
@@ -61,6 +49,7 @@
                 <button class="button is-link is-rounded column is-one-quarter">Monster</button>
                 <button class="button is-link is-rounded column is-one-quarter">Redbull</button>
                 <button class="button is-link is-rounded column is-one-quarter">Rockstar</button>
+                <button class="button is-link is-rounded column is-one-quarter">Kids</button>
 
             </div>
         </div>
@@ -93,5 +82,6 @@
         <h2 class="subtitle">
         </h2>
     </section>
+    <script src="/javascript/drinks.js"></script>
 
 </body>
