@@ -55,11 +55,14 @@
 
 /* Styling for Favorites Page BEGINS */
 .media {
-    color: #7bf3f3;
+    color: #7bf3f3 !important;
 }
+
 span.oi.oi-heart {
     color:#7bf3f3 !important;
 }
+
+
 
 
 
