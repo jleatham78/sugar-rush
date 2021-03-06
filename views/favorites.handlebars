@@ -60,19 +60,22 @@
         <h2 class="subtitle"></h2>
         <div class="columns">
             <div class="card column">
-                <div class="card-content" id="container-text">
+                <div class="card-content">
                     <div class="media">
                         <div class="media-content">
-                            <p class="title is-4">{{ drink_name }}</p>
+                            <p class="title is-4" id="container-text">{{ drink_name }}</p>
                         </div>
+                            
                     </div>
-                    <!--
-                    <div class="content">
+                      <div class="content" id="add-ins">
+                       <!--
                         <p>Ingredients</p>
                         <ul>
                             <li>{{ add_ins }}</li>
                         </ul>
                         -->
+                        
+                    
                         <button type="submit" id="favorite" class="button"><span class="oi oi-heart"></span></button>
                     </div>
                 </div>
@@ -92,5 +95,6 @@
     
 
     <script src="/javascript/drinks.js"></script>
+    <script src="/javascript/logout.js"></script>
 
 </body>

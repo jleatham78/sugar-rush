@@ -6,9 +6,19 @@ const menuData = require('../../seed');
 
 router.get('/soda', (req, res) => {
     console.log("Got the route");
+    // Drinks.findAll({
+    //     where: {
+    //         base: req.body.base
+    //     }
+    // })
+    //     .then(dbDrinksData => res.json(dbDrinksData))
+    //     .catch(err => {
+    //         console.log(err);
+    //         res.status(400).json(err);
+    //     });
     res.json(menuData.filter(function(e) {
-      return e.base == "Mountain Dew";
-    }))   
+      return e.base == menuData.base
+    }))  
   });
 
 router.get('/', (req, res) => {
