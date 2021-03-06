@@ -1,5 +1,6 @@
 const router = require('express').Router();
 const { User } = require('../../models');
+const menuData = require('../../seed');
 
 router.get('/', (req, res) => {
     User.findAll({})
@@ -33,6 +34,7 @@ router.post('/', (req, res) => {
   });
   
   router.post('/login', (req, res) => {
+   
     User.findOne({
       where: {
         email: req.body.email

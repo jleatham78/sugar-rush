@@ -1,8 +1,18 @@
 const router = require('express').Router();
 const { Favs } = require('../../models');
 const withAuth = require('../../utils/auth');
+const menuData = require('../../seed');
+
+
+router.get('/soda', (req, res) => {
+    console.log("Got the route");
+    res.json(menuData.filter(function(e) {
+      return e.base == "Mountain Dew";
+    }))   
+  });
 
 router.get('/', (req, res) => {
+    const favs =
     Favs.findAll({})
         .then(dbFavsData => res.json(dbFavsData))
         .catch(err => {
@@ -24,7 +34,6 @@ router.post('/', withAuth, (req, res) => {
             res.status(400).json(err);
         });
 });
-
 
 router.delete('/:id', withAuth, (req, res) => {
     Favs.destroy({

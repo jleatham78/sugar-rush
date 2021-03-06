@@ -1,5 +1,3 @@
-const {Drinks} = require('./models');
-const sequelize = require('./config/connection');
 
 const menuData = [
 {
@@ -689,3 +687,5 @@ const menuData = [
 }
 
 ]
+
+module.exports = menuData;
