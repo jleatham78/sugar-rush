@@ -4,5 +4,7 @@ Welcome to the Sugar Rush website, where a user can view the menu on the main pa
 
 https://blooming-harbor-63482.herokuapp.com/
 
+![image](https://user-images.githubusercontent.com/73211852/110192911-2a484580-7dee-11eb-93b2-7c8399b14b3b.png)
+
 
 
