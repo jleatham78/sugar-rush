@@ -7,11 +7,12 @@ const menuData = require('../../seed');
 router.get('/soda', (req, res) => {
     console.log("Got the route");
     res.json(menuData.filter(function(e) {
-      return e.base == "Rockstar";
+      return e.base == "Mountain Dew";
     }))   
   });
 
 router.get('/', (req, res) => {
+    const favs =
     Favs.findAll({})
         .then(dbFavsData => res.json(dbFavsData))
         .catch(err => {
