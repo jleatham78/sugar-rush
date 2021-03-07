@@ -33,23 +33,23 @@
             </p>
             <div class="buttons are-medium is-centered columns mt-4">
 
-                <button class="button is-link is-rounded column is-one-quarter" id="coke">Coke</button>
-                <button class="button is-link is-rounded column is-one-quarter">Diet Coke</button>
-                <button class="button is-link is-rounded column is-one-quarter">Coke Zero</button>
-                <button class="button is-link is-rounded column is-one-quarter">Pepsi</button>
-                <button class="button is-link is-rounded column is-one-quarter">Diet Pepsi</button>
-                <button class="button is-link is-rounded column is-one-quarter">Dr. Pepper</button>
-                <button class="button is-link is-rounded column is-one-quarter">Diet Dr. Pepper</button>
-                <button class="button is-link is-rounded column is-one-quarter">Mtn Dew</button>
-                <button class="button is-link is-rounded column is-one-quarter">Diet Mtn Dew</button>
-                <button class="button is-link is-rounded column is-one-quarter">Sprite</button>
-                <button class="button is-link is-rounded column is-one-quarter">Sprite Zero</button>
-                <button class="button is-link is-rounded column is-one-quarter">7UP</button>
-                <button class="button is-link is-rounded column is-one-quarter">Lemonade</button>
-                <button class="button is-link is-rounded column is-one-quarter">Monster</button>
-                <button class="button is-link is-rounded column is-one-quarter">Redbull</button>
-                <button class="button is-link is-rounded column is-one-quarter">Rockstar</button>
-                <button class="button is-link is-rounded column is-one-quarter">Kids</button>
+                <button class="button is-link is-rounded column is-one-quarter" value="Coke" onclick="showDrinks(value)">Coke</button>
+                <button class="button is-link is-rounded column is-one-quarter" value="Diet Coke" onclick="showDrinks(value)">Diet Coke</button>
+                <button class="button is-link is-rounded column is-one-quarter" value="Coke Zero" onclick="showDrinks(value)">Coke Zero</button>
+                <button class="button is-link is-rounded column is-one-quarter" value="Pepsi" onclick="showDrinks(value)">Pepsi</button>
+                <button class="button is-link is-rounded column is-one-quarter" value="Diet Pepsi" onclick="showDrinks(value)">Diet Pepsi</button>
+                <button class="button is-link is-rounded column is-one-quarter" value="Dr. Pepper" onclick="showDrinks(value)">Dr. Pepper</button>
+                <button class="button is-link is-rounded column is-one-quarter" value="Diet Dr. Pepper" onclick="showDrinks(value)">Diet Dr. Pepper</button>
+                <button class="button is-link is-rounded column is-one-quarter" value="Mountain Dew" onclick="showDrinks(value)">Mtn Dew</button>
+                <button class="button is-link is-rounded column is-one-quarter" value="Diet Mountain Dew" onclick="showDrinks(value)">Diet Mtn Dew</button>
+                <button class="button is-link is-rounded column is-one-quarter" value="Sprite" onclick="showDrinks(value)">Sprite</button>
+                <button class="button is-link is-rounded column is-one-quarter" value="Sprite Zero" onclick="showDrinks(value)">Sprite Zero</button>
+                <button class="button is-link is-rounded column is-one-quarter" value="7Up" onclick="showDrinks(value)">7UP</button>
+                <button class="button is-link is-rounded column is-one-quarter" value="Lemonade" onclick="showDrinks(value)">Lemonade</button>
+                <button class="button is-link is-rounded column is-one-quarter" value="Monster" onclick="showDrinks(value)">Monster</button>
+                <button class="button is-link is-rounded column is-one-quarter" value="Redbull" onclick="showDrinks(value)"> Redbull</button>
+                <button class="button is-link is-rounded column is-one-quarter" value="Rockstar" onclick="showDrinks(value)">Rockstar</button>
+                <button class="button is-link is-rounded column is-one-quarter" value="Kids" onclick="showDrinks(value)">Kids</button>
 
             </div>
         </div>
@@ -60,25 +60,26 @@
         <h2 class="subtitle"></h2>
         <div class="columns">
             <div class="card column">
+                {{#each drinks}}
                 <div class="card-content">
                     <div class="media">
                         <div class="media-content">
-                            <p class="title is-4" id="container-text">{{ drink_name }}</p>
+                            <p class="title is-4" id="container-text">{{ this.drink_name }}</p>
                         </div>
                             
                     </div>
                       <div class="content" id="add-ins">
-                       <!--
+                     
                         <p>Ingredients</p>
                         <ul>
-                            <li>{{ add_ins }}</li>
+                            <li>{{ this.add_ins }}</li>
                         </ul>
-                        -->
                         
-                    
+                         
                         <button type="submit" id="favorite" class="button"><span class="oi oi-heart"></span></button>
                     </div>
                 </div>
+                {{/each}}
             </div>
     </section>
 

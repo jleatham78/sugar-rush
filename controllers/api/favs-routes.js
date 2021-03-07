@@ -3,23 +3,14 @@ const { Favs } = require('../../models');
 const withAuth = require('../../utils/auth');
 const menuData = require('../../seed');
 
-
-router.get('/soda', (req, res) => {
-    console.log("Got the route");
-    // Drinks.findAll({
-    //     where: {
-    //         base: req.body.base
-    //     }
-    // })
-    //     .then(dbDrinksData => res.json(dbDrinksData))
-    //     .catch(err => {
-    //         console.log(err);
-    //         res.status(400).json(err);
-    //     });
-    res.json(menuData.filter(function(e) {
-      return e.base == menuData.base
-    }))  
+router.post('/soda', (req, res) => {
+    const returnedDrinks = menuData.filter(function(menuItem) { 
+        return menuItem.base == req.body.val})
+        console.log(returnedDrinks)
+        console.log(req.body)
+        return res.render('favorites', {drinks: returnedDrinks})
   });
+
 
 router.get('/', (req, res) => {
     const favs =
