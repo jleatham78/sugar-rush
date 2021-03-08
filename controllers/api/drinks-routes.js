@@ -20,18 +20,5 @@ router.get('/drinks', withAuth, (req, res) => {
         });
 });
 
-// router.get('/drinks/', withAuth, (req, res) => {
-//     //if (req.session)
-//     Favs.create({
-//         drink_name: req.body.drink_name,
-//         user_id: req.session.user_id
-
-//     })
-//         .then(dbFavsData => res.json(dbFavsData))
-//         .catch(err => {
-//             console.log(err);
-//             res.status(400).json(err);
-//         });
-// });
 
 module.exports = router;

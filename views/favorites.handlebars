@@ -55,16 +55,18 @@
         </div>
     </section>
 
+    <!--
     <section class="section">
         <h1 class="title has-text-centered has-text-weight-bold">Available Drinks</h1>
         <h2 class="subtitle"></h2>
         <div class="columns">
-            <div class="card column">
-                {{#each drinks}}
-                <div class="card-content">
+            <div class="card column" id= "drink-cards">
+                 <div class="card-content">
                     <div class="media">
                         <div class="media-content">
-                            <p class="title is-4" id="container-text">{{ this.drink_name }}</p>
+                            <p class="title is-4" id="container-text">
+
+                            </p>
                         </div>
                             
                     </div>
@@ -72,26 +74,38 @@
                      
                         <p>Ingredients</p>
                         <ul>
-                            <li>{{ this.add_ins }}</li>
+                            <li>
+
+                            </li>
                         </ul>
+                
                         
                          
                         <button type="submit" id="favorite" class="button"><span class="oi oi-heart"></span></button>
                     </div>
                 </div>
-                {{/each}}
+               
             </div>
+    </section>
+    -->
+
+    <section class="section">
+        <h1 class="title has-text-centered has-text-weight-bold">Available Drinks</h1>
+        <div class="columns">
+            <div id="container-text"></div>
+            <div id="add-ins"></div>
+        </div>
     </section>
 
         <section class="section is-medium">
         <h1 class="title has-text-centered has-text-weight-bold">Your Favorites</h1>
-        {{#each favs}}
+        
         <h2 class="subtitle">
             <li>
                 {{ favs.drink_name }}
                 </li>
         </h2>
-        {{/each}}
+        
     </section>
     
 

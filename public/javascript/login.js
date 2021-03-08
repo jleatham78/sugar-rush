@@ -17,7 +17,6 @@ async function loginFormHandler(event) {
         });
 
         if (response.ok) {
-            //res.render('favorites');
             document.location.replace('/favs');
         } else {
             alert(response.statusText);

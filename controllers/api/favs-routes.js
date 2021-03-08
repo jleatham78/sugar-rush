@@ -8,7 +8,7 @@ router.post('/soda', (req, res) => {
         return menuItem.base == req.body.val})
         console.log(returnedDrinks)
         console.log(req.body)
-        return res.render('favorites', {drinks: returnedDrinks})
+        res.json({returnedDrinks})
   });
 
 
@@ -23,7 +23,6 @@ router.get('/', (req, res) => {
 });
 
 router.post('/', withAuth, (req, res) => {
-    //if (req.session)
     Favs.create({
         drink_name: req.body.drink_name,
         user_id: req.session.user_id
